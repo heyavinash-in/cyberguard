@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberGuard - Developer Guide</title>
+    <style>
+        :root {
+            --primary: #10b981; /* Emerald green */
+            --bg: #f8fafc;
+            --text: #0f172a;
+            --muted: #64748b;
+            --border: #e2e8f0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 60px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h1 { font-size: 2.5rem; border-bottom: 3px solid var(--primary); padding-bottom: 10px; }
+        h2 { font-size: 1.8rem; color: #1e293b; margin-top: 40px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+        h3 { font-size: 1.3rem; color: #334155; margin-top: 25px; }
+        p, li { font-size: 1.1rem; color: #334155; margin-bottom: 15px; }
+        .highlight { background: #f1f5f9; padding: 15px; border-left: 4px solid var(--primary); margin: 20px 0; font-style: italic; }
+        code { background: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.95em; color: #e11d48; }
+        pre { background: #1e293b; color: #f8fafc; padding: 20px; border-radius: 8px; overflow-x: auto; }
+        pre code { background: none; color: inherit; padding: 0; }
+        
+        /* Print styles for saving to PDF */
+        @media print {
+            body { background: white; }
+            .container { box-shadow: none; margin: 0 auto; padding: 20px; max-width: 100%; }
+            .no-print { display: none; }
+            pre { border: 1px solid #ccc; color: black; background: #f9f9f9; }
+            pre code { color: black; }
+        }
+        
+        .print-btn {
+            display: block;
+            width: 200px;
+            margin: 0 auto 30px auto;
+            padding: 12px 24px;
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            border: none;
+        }
+        .print-btn:hover { background: #059669; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <button class="print-btn no-print" onclick="window.print()">Save as PDF</button>
+
+    <h1>CyberGuard: Developer & Architecture Guide</h1>
+    <p><strong>Target Audience:</strong> Hackathon developers with basic HTML, CSS, and JavaScript knowledge.</p>
+    <p>This guide translates how we built the modern CyberGuard dashboard into simple, easy-to-understand concepts so you can build, modify, and expand upon it yourself.</p>
+
+    <div class="highlight">
+        <strong>The Big Picture:</strong> Instead of writing dozens of separate HTML files, we used a framework called <strong>Next.js (React)</strong>. React lets us create reusable "custom HTML tags" (called Components). For styling, instead of a separate CSS file, we used <strong>Tailwind CSS</strong>, which lets us style elements directly inside our HTML using simple keywords.
+    </div>
+
+    <h2>1. The Technology Stack</h2>
+    <ul>
+        <li><strong>React.js:</strong> The core engine. It lets us write JavaScript that returns HTML.</li>
+        <li><strong>Next.js (App Router):</strong> A framework built on top of React. It handles our folders and creates website pages automatically (e.g., putting a file in <code>src/app/threats</code> automatically creates the <code>/threats</code> website link).</li>
+        <li><strong>Tailwind CSS:</strong> A styling tool. Instead of writing <code>style="background-color: red;"</code>, you just type <code>class="bg-red-500"</code> in your HTML.</li>
+        <li><strong>Lucide React:</strong> A library of free, professional SVG icons used for the dashboard (like the shield, globe, and alert icons).</li>
+    </ul>
+
+    <h2>2. Step-by-Step Procedure: How We Built It</h2>
+
+    <h3>Step 1: Project Setup</h3>
+    <p>To start a project like this from scratch, a developer opens their terminal and runs:</p>
+    <pre><code>npx create-next-app@latest cyberguard</code></pre>
+    <p>This automatically downloads Next.js, sets up Tailwind CSS, and creates the folder structure. No manual configuration of Webpack or servers is needed.</p>
+
+    <h3>Step 2: Building Reusable "Components" (Like Lego Blocks)</h3>
+    <p>In standard HTML, if you want 10 buttons, you write the HTML for a button 10 times. If you want to change the color, you change it 10 times. In React, we created a single <code>Button.tsx</code> file.</p>
+    <p>Now, anywhere in the app, we can just type <code>&lt;Button&gt;Click Me&lt;/Button&gt;</code>. We did this for Cards, Badges, and the Risk Indicator circle.</p>
+
+    <h3>Step 3: The Global Layout (The "Shell")</h3>
+    <p>We created a Sidebar and a Header. Next.js has a special file called <code>layout.tsx</code>. Anything you put in this file wraps around every single page on the website.</p>
+    <pre><code>// Simplified layout.tsx
+export default function Layout({ children }) {
+  return (
+    &lt;div class="flex"&gt;
+      &lt;Sidebar /&gt;
+      &lt;div class="content"&gt;
+        &lt;Header /&gt;
+        {children} &lt;!-- The specific page content goes here --&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  )
+}</code></pre>
+
+    <h3>Step 4: React "State" (Making it Interactive)</h3>
+    <p>In vanilla JavaScript, to change text when a button is clicked, you have to use <code>document.getElementById()</code> and manually update the DOM. React does this automatically using something called <strong>State</strong>.</p>
+    <p>For the Analyzers (URL, Message, Media), we used a State variable called <code>status</code>. It can be one of three words: <strong>"idle"</strong>, <strong>"analyzing"</strong>, or <strong>"complete"</strong>.</p>
+    <ul>
+        <li>If status is <code>idle</code>: We show the HTML for the input box.</li>
+        <li>If status is <code>analyzing</code>: We hide the input box and show the HTML for a spinning loader.</li>
+        <li>If status is <code>complete</code>: We hide the loader and show the final Risk Score HTML.</li>
+    </ul>
+
+    <h3>Step 5: Simulating AI Analysis (The Hackathon Trick)</h3>
+    <p>Since we don't have a real multi-million dollar AI backend, we <em>simulated</em> it for the demo. When the user clicks "Analyze", we trigger a JavaScript <code>setInterval</code> timer.</p>
+    <pre><code>// How the scanning animation works
+let currentStep = 0;
+const interval = setInterval(() => {
+  currentStep++;
+  if (currentStep < 5) {
+    updateLoadingText(currentStep); // Changes text to "Scanning metadata..."
+  } else {
+    clearInterval(interval);
+    setStatus("complete"); // Shows the final results!
+  }
+}, 1500); // Waits 1.5 seconds per step
+</code></pre>
+
+    <h3>Step 6: The "Print to PDF" Report Trick</h3>
+    <p>For Phase 9 (Reports), we needed a way to export PDFs. Generating PDFs via code is very complex and heavy. Instead, we used a clever CSS trick.</p>
+    <p>We built a normal webpage, but we used Tailwind's <code>print:</code> classes. For example, <code>print:hidden</code> hides the sidebar when printing. <code>print:bg-white</code> forces the dark-mode dashboard to turn white for the printer. We then tied a button to the simple JavaScript command: <code>window.print()</code>.</p>
+
+    <h2>3. How to Modify This Code</h2>
+    <p>If your team wants to change the website for the presentation:</p>
+    <ul>
+        <li><strong>To change the Dashboard numbers:</strong> Open <code>src/app/page.tsx</code>. Look for the <code>const METRICS = [...]</code> array at the top and change the text.</li>
+        <li><strong>To change the Colors:</strong> Open <code>src/app/globals.css</code>. You will see CSS variables (like <code>--primary</code>). Change the HEX codes there.</li>
+        <li><strong>To add a new Sidebar link:</strong> Open <code>src/components/layout/sidebar.tsx</code> and add a new item to the navigation list.</li>
+    </ul>
+    
+    <div style="margin-top: 40px; text-align: center; color: var(--muted); font-size: 0.9em;">
+        Generated by CyberGuard AI Assistant. Good luck at the hackathon!
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "false_positives": [],
+  "false_negatives": [
+    {
+      "url": "http://conflict.com/a",
+      "true_label": 1,
+      "predicted_label": 0,
+      "probability": 0.13381940741834053,
+      "group": "conflict.com"
+    }
+  ],
+  "fp_count": 0,
+  "fn_count": 1
+}

@@ -1,0 +1,2 @@
+id,filename,expected_label,transformation,predicted_classification,ai_probability,real_probability,confidence,risk_score,risk_level,processing_time_ms,detector_model,forensics_frequency_anomaly,forensics_noise_anomaly,error
+ai_000,ai_000.jpg,AI_GENERATED,None,REAL,0.0958,0.9042,0.9042,10,SAFE,59383.40187072754,umm-maybe/AI-image-detector,STRONG,NONE,

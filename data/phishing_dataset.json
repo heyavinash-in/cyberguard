@@ -1,0 +1,302 @@
+[
+  {
+    "id": "01",
+    "message": "URGENT: Your account has been temporarily suspended. Verify your identity immediately at https://secure-example.com/verify-account or your account may be permanently disabled.",
+    "label": "PHISHING",
+    "risk": 95,
+    "confidence": 95,
+    "indicators": ["urgency", "fear", "account suspension", "identity verification", "suspicious domain"],
+    "reason": "Creates urgency and fear. Claims account suspension. Requests identity verification. Uses a suspicious generic security domain. Attempts to make the user act immediately.",
+    "recommended_action": "Do not click the link or enter credentials. Verify account status by navigating directly to the official website."
+  },
+  {
+    "id": "02",
+    "message": "Congratulations! You have been selected to receive a ₹50,000 reward. Claim your prize by providing your details through the following verification page: https://reward-example.net/claim",
+    "label": "SCAM",
+    "risk": 96,
+    "confidence": 95,
+    "indicators": ["unexpected prize", "financial incentive", "personal-information request", "suspicious domain"],
+    "reason": "Unexpected prize. Financial incentive. Requests personal information. Uses a generic reward domain.",
+    "recommended_action": "Ignore and delete. Legitimate organizations do not distribute random cash prizes via unsolicited links."
+  },
+  {
+    "id": "03",
+    "message": "Security Alert: We detected unusual activity on your bank account. Confirm your account information immediately to prevent further restrictions.",
+    "label": "PHISHING",
+    "risk": 88,
+    "confidence": 90,
+    "indicators": ["financial impersonation", "fear", "account-information request", "urgency"],
+    "reason": "Impersonates a financial/security service. Creates fear. Requests account information. Uses vague language instead of identifying a verifiable bank contact.",
+    "recommended_action": "Contact your bank directly using the phone number on the back of your card."
+  },
+  {
+    "id": "04",
+    "message": "Your university portal account requires verification. Please log in through https://student-verification-example.com before today's deadline.",
+    "label": "PHISHING",
+    "risk": 87,
+    "confidence": 92,
+    "indicators": ["institution impersonation", "deadline pressure", "login request", "suspicious domain"],
+    "reason": "Impersonates an educational institution. Creates a deadline. Requests login activity. Domain does not clearly belong to the institution.",
+    "recommended_action": "Do not click the link. Log in directly via your university's official student portal."
+  },
+  {
+    "id": "05",
+    "message": "Microsoft Security: Your session has expired. Sign in again to continue accessing your documents: https://office-login-example.net",
+    "label": "PHISHING",
+    "risk": 90,
+    "confidence": 94,
+    "indicators": ["brand impersonation", "login request", "domain mismatch", "fake technical alert"],
+    "reason": "Uses a recognizable company name. Requests login. Uses a suspicious domain that does not clearly belong to Microsoft.",
+    "recommended_action": "Do not sign in. Access Microsoft Office directly via office.com."
+  },
+  {
+    "id": "06",
+    "message": "Hey, I'm setting up your account. You should receive a verification code shortly. Send the code to me when it arrives.",
+    "label": "SOCIAL_ENGINEERING",
+    "risk": 94,
+    "confidence": 90,
+    "indicators": ["OTP request", "account takeover risk", "social engineering", "trust exploitation"],
+    "reason": "Attempts to obtain a one-time verification code. The sender provides insufficient context. The request could allow account takeover.",
+    "recommended_action": "Do NOT share the code. Verification codes are for your eyes only."
+  },
+  {
+    "id": "07",
+    "message": "Your package could not be delivered because your address is incomplete. Update your delivery information here: https://delivery-example.net/update",
+    "label": "PHISHING",
+    "risk": 86,
+    "confidence": 90,
+    "indicators": ["delivery impersonation", "problem-action pattern", "information request", "suspicious domain"],
+    "reason": "Uses a common delivery-service impersonation pattern. Creates a problem requiring action. Requests information.",
+    "recommended_action": "Check the delivery status on the official courier's website using your original tracking number."
+  },
+  {
+    "id": "08",
+    "message": "IT Department: We are performing a security audit. Please send your username and password to this email so we can verify your account.",
+    "label": "PHISHING",
+    "risk": 99,
+    "confidence": 98,
+    "indicators": ["credential request", "authority impersonation", "password request", "security pretext"],
+    "reason": "Requests credentials directly. Legitimate IT departments should not normally request passwords through ordinary messages.",
+    "recommended_action": "Do not reply. Report this message to your actual IT department."
+  },
+  {
+    "id": "09",
+    "message": "Your account needs verification: https://google.com.security-example.net/login",
+    "label": "MALICIOUS_LINK",
+    "risk": 93,
+    "confidence": 95,
+    "indicators": ["brand-name deception", "misleading subdomain", "registrable-domain mismatch"],
+    "reason": "The important domain is security-example.net. The presence of google.com is part of the hostname/subdomain and does NOT mean the URL belongs to Google.",
+    "recommended_action": "Do not visit the link. The URL is deceptive."
+  },
+  {
+    "id": "10",
+    "message": "Please verify your student account: https://accounts-university-example.net/gitam/login",
+    "label": "PHISHING",
+    "risk": 92,
+    "confidence": 93,
+    "indicators": ["institution impersonation", "login request", "brand keyword deception", "domain mismatch"],
+    "reason": "Uses an institution-related keyword. Requests login. Domain does not establish legitimate institutional ownership.",
+    "recommended_action": "Do not log in. Go to the official university website to verify."
+  },
+  {
+    "id": "11",
+    "message": "Hey, are you coming to the library after class?",
+    "label": "SAFE",
+    "risk": 2,
+    "confidence": 99,
+    "indicators": [],
+    "reason": "No credential request. No suspicious link. Normal interpersonal communication.",
+    "recommended_action": "No action required."
+  },
+  {
+    "id": "12",
+    "message": "The Python assignment is due tomorrow. Don't forget to submit it.",
+    "label": "SAFE",
+    "risk": 1,
+    "confidence": 99,
+    "indicators": [],
+    "reason": "Normal academic communication with no suspicious behavior.",
+    "recommended_action": "No action required."
+  },
+  {
+    "id": "13",
+    "message": "Our project meeting is at 5 PM in Lab 204. Please bring your laptop.",
+    "label": "SAFE",
+    "risk": 1,
+    "confidence": 99,
+    "indicators": [],
+    "reason": "No phishing indicators.",
+    "recommended_action": "No action required."
+  },
+  {
+    "id": "14",
+    "message": "Remember to use a strong password and enable multi-factor authentication on your accounts.",
+    "label": "SAFE",
+    "risk": 1,
+    "confidence": 95,
+    "indicators": [],
+    "reason": "The message discusses security but does not request credentials or force the user to visit a suspicious website.",
+    "recommended_action": "No action required."
+  },
+  {
+    "id": "15",
+    "message": "I pushed the latest changes to our GitHub repository. Please review the pull request when you have time.",
+    "label": "SAFE",
+    "risk": 2,
+    "confidence": 99,
+    "indicators": [],
+    "reason": "Normal software-development communication.",
+    "recommended_action": "No action required."
+  },
+  {
+    "id": "16",
+    "message": "We noticed a login to your account from a new device. If this wasn't you, please open the official application and review your recent activity.",
+    "label": "SAFE",
+    "risk": 20,
+    "confidence": 85,
+    "indicators": [],
+    "reason": "Discusses a security event, but does not request a password or contain a suspicious link. Directs user to the official app.",
+    "recommended_action": "Open the official app to check your activity."
+  },
+  {
+    "id": "17",
+    "message": "Please review the documentation at https://example.com/docs/security",
+    "label": "SAFE",
+    "risk": 5,
+    "confidence": 90,
+    "indicators": [],
+    "reason": "A URL alone does not make a message malicious. Domain is not malicious and context is normal.",
+    "recommended_action": "Safe to view."
+  },
+  {
+    "id": "18",
+    "message": "URGENT: The classroom has changed to Room 204. Please arrive before the 10 AM lecture.",
+    "label": "SAFE",
+    "risk": 5,
+    "confidence": 95,
+    "indicators": [],
+    "reason": "Contains URGENT, but urgency alone is not phishing. No credential or financial requests.",
+    "recommended_action": "No action required."
+  },
+  {
+    "id": "19",
+    "message": "Our cybersecurity lecture today covers password managers and MFA.",
+    "label": "SAFE",
+    "risk": 1,
+    "confidence": 98,
+    "indicators": [],
+    "reason": "Contains cybersecurity-related keywords but does not attempt to steal credentials.",
+    "recommended_action": "No action required."
+  },
+  {
+    "id": "20",
+    "message": "Can you send me your student portal username and password? I need to check something for the project.",
+    "label": "SOCIAL_ENGINEERING",
+    "risk": 92,
+    "confidence": 90,
+    "indicators": ["credential request"],
+    "reason": "Requests credentials. Uses a plausible interpersonal excuse. Attempts to normalize credential sharing.",
+    "recommended_action": "Do not share your credentials."
+  },
+  {
+    "id": "21",
+    "message": "https://paypal.com.security-example.net/login",
+    "label": "MALICIOUS_LINK",
+    "risk": 95,
+    "confidence": 96,
+    "indicators": ["brand-name deception", "misleading subdomain", "registrable-domain mismatch"],
+    "reason": "The registrable domain is security-example.net, NOT paypal.com. The attacker is using a trusted brand name as part of the hostname.",
+    "recommended_action": "Do not click the link."
+  },
+  {
+    "id": "22",
+    "message": "https://paypa1-example.net/login",
+    "label": "MALICIOUS_LINK",
+    "risk": 94,
+    "confidence": 95,
+    "indicators": ["lookalike domain", "brand impersonation", "login page"],
+    "reason": "Uses a visually similar brand concept. Attempts to imitate a trusted service. Login path increases risk.",
+    "recommended_action": "Do not click the link."
+  },
+  {
+    "id": "23",
+    "message": "Your account requires verification. Visit http://192.0.2.10/login",
+    "label": "MALICIOUS_LINK",
+    "risk": 88,
+    "confidence": 90,
+    "indicators": ["IP address login", "HTTP instead of HTTPS", "account-verification context"],
+    "reason": "Authentication page hosted directly on an IP address. HTTP instead of HTTPS. Account-verification context.",
+    "recommended_action": "Do not visit or enter credentials."
+  },
+  {
+    "id": "24",
+    "message": "Please log in to verify your account: http://example.net/login",
+    "label": "SUSPICIOUS",
+    "risk": 70,
+    "confidence": 80,
+    "indicators": ["HTTP", "generic domain", "login request"],
+    "reason": "Login request. Uses HTTP rather than HTTPS. Generic domain.",
+    "recommended_action": "Proceed with extreme caution. Do not submit passwords."
+  },
+  {
+    "id": "25",
+    "message": "This is the university administration office. Your account has been selected for an important verification process. Send your student ID and login details immediately.",
+    "label": "PHISHING",
+    "risk": 97,
+    "confidence": 98,
+    "indicators": ["authority impersonation", "urgency", "credential request", "institutional trust"],
+    "reason": "Authority impersonation. Urgency. Requests sensitive information. Uses institutional trust.",
+    "recommended_action": "Do not reply. Report to your university IT."
+  },
+  {
+    "id": "26",
+    "message": "Hey, I'm having trouble accessing my account. Can you forward me the verification code you receive? It's really important.",
+    "label": "SOCIAL_ENGINEERING",
+    "risk": 96,
+    "confidence": 95,
+    "indicators": ["OTP request", "friendship/trust", "urgency", "account takeover"],
+    "reason": "Requests verification code. Uses friendship/trust. Creates urgency. Could facilitate account takeover.",
+    "recommended_action": "Do not share the code. Contact your friend through another channel to verify."
+  },
+  {
+    "id": "27",
+    "message": "I need the payment completed within the next 10 minutes or your registration will be cancelled. Pay using the link below.",
+    "label": "PHISHING",
+    "risk": 94,
+    "confidence": 93,
+    "indicators": ["financial request", "urgency", "threat", "payment link"],
+    "reason": "Strong time pressure. Financial transaction. Threat of cancellation. Link-based payment request.",
+    "recommended_action": "Do not pay via the link. Log in directly to the service provider."
+  },
+  {
+    "id": "28",
+    "message": "Warning: Never share your password or OTP with anyone. Cybercriminals may send fake verification messages to steal your account.",
+    "label": "SAFE",
+    "risk": 1,
+    "confidence": 95,
+    "indicators": [],
+    "reason": "Educational message containing phishing-related keywords but no malicious intent.",
+    "recommended_action": "No action required."
+  },
+  {
+    "id": "29",
+    "message": "Hi, I need you to complete a quick step regarding your account. Use the page below and finish the process before access is affected. https://account-check-example.net/process",
+    "label": "PHISHING",
+    "risk": 82,
+    "confidence": 85,
+    "indicators": ["implied pressure", "external action request", "generic domain"],
+    "reason": "Creates implied pressure. References account access. Requests external action. Domain is generic.",
+    "recommended_action": "Do not click the link. Verify account status directly."
+  },
+  {
+    "id": "30",
+    "message": "Our cybersecurity club is conducting a phishing-awareness workshop today. We will demonstrate how fake login pages work. Please attend Lab 3 at 4 PM.",
+    "label": "SAFE",
+    "risk": 1,
+    "confidence": 98,
+    "indicators": [],
+    "reason": "Contains phishing-related keywords but the context is clearly educational.",
+    "recommended_action": "No action required."
+  }
+]

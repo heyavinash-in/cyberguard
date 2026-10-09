@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:wght@100..900&family=Space+Grotesk:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-low": "#161c24", "secondary-container": "#00a572", "outline-variant": "#3d494c", "on-secondary-fixed-variant": "#005236", "surface-container-high": "#242a33", "primary-fixed": "#acedff", "on-primary-fixed-variant": "#004e5c", "secondary": "#4edea3", "secondary-fixed-dim": "#4edea3", "primary": "#4cd7f6", "secondary-fixed": "#6ffbbe", "primary-container": "#06b6d4", "inverse-primary": "#00687a", "on-error": "#690005", "tertiary-container": "#e79400", "tertiary": "#ffb95f", "on-secondary-container": "#00311f", "on-tertiary": "#472a00", "error-container": "#93000a", "surface-container": "#1a2029", "surface-variant": "#2f353e", "outline": "#869397", "on-primary-container": "#00424f", "tertiary-fixed": "#ffddb8", "on-error-container": "#ffdad6", "on-secondary": "#003824", "on-surface": "#dde3ef", "on-secondary-fixed": "#002113", "background": "#0d141c", "on-surface-variant": "#bcc9cd", "on-background": "#dde3ef", "tertiary-fixed-dim": "#ffb95f", "error": "#ffb4ab", "surface-dim": "#0d141c", "inverse-on-surface": "#2a313a", "surface-tint": "#4cd7f6", "surface-container-highest": "#2f353e", "on-tertiary-fixed": "#2a1700", "on-primary": "#003640", "primary-fixed-dim": "#4cd7f6", "on-tertiary-container": "#563400", "on-primary-fixed": "#001f26", "surface-container-lowest": "#080f17", "surface-bright": "#333a43", "inverse-surface": "#dde3ef", "on-tertiary-fixed-variant": "#653e00", "surface": "#0d141c" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-xs": "0.25rem", "gutter": "1rem", "space-md": "1rem", "margin": "1rem", "space-xl": "2.5rem", "margin-desktop": "2rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "gutter-desktop": "1.5rem" }, fontFamily: { "headline-lg": ["Space Grotesk"], "headline-md": ["Space Grotesk"], "label-lg": ["JetBrains Mono"], "headline-xl": ["Space Grotesk"], "body-sm": ["Geist"], "body-md": ["Geist"], "body-lg": ["Geist"], "label-md": ["JetBrains Mono"], "headline-xl-mobile": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "label-sm": ["JetBrains Mono"] }, fontSize: { "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-lg": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-md": ["11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" }], "headline-xl-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col justify-between p-space-md"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-sm pt-space-xs"><img alt="CyberGuard OS Shield Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V8Ldy13lXorlel9cFSOnqEMzLvKeqsH4M_1jAomxO3_ZzYZ5KMs26h3hVzdR9VhvnUCZ99GR002_qYd2ZRwY8jj5IZ8mgl1g5kMLHo12V70J4YXIJVR8zIb6CniHporOly8SZ57P3tkuu-LpSt2kXCIb1CpfCsLjanaRiGiiBJdZ9v7Uiwxhe9I_40cZB4Ki_LezGbDH9KgWeiVlXWjO5W3gUUxlXjMU7vexZgjLZFaQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">CYBERGUARD</span><span class="font-label-sm text-label-sm text-primary tracking-widest leading-none mt-1">OS :: INTELLIGENCE</span></div></div><div class="px-space-sm py-space-xs bg-surface-container-low rounded-xl flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-secondary">CORE ENGINE v2.4</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">ACTIVE</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm rounded-xl"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="hub" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-lg text-label-lg">Hub</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="url-scanner" href="#"><span class="material-symbols-outlined text-[20px]">link</span><span class="font-label-lg text-label-lg">URL Scanner</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-all bg-primary-container text-on-primary-container font-headline-sm rounded-xl" data-path="message-analysis" href="#"><span class="material-symbols-outlined text-[20px]">chat_bubble</span><span class="font-label-lg text-label-lg">Message Analysis</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="unified-dashboard" href="#"><span class="material-symbols-outlined text-[20px]">monitoring</span><span class="font-label-lg text-label-lg">Unified Dashboard</span></a></nav></div><div class="flex flex-col gap-space-sm p-space-sm bg-surface-container rounded-xl"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">INFERENCE ACCEL</span><span class="font-label-sm text-label-sm text-primary">ONNX/METAL</span></div><div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden"><div class="bg-primary h-full w-3/4"></div></div><div class="flex items-center justify-between pt-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant">LOCAL AIRGAP</span><span class="font-label-sm text-label-sm text-secondary">100% SECURE</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl z-40 px-gutter-desktop flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container rounded-lg"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface">LOCAL AI ONLINE (v2.4)</span></div><div class="hidden md:flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container-low rounded-lg"><span class="material-symbols-outlined text-primary text-[14px]">memory</span><span class="font-label-sm text-label-sm text-on-surface-variant">Llama-3-Guard-8B [Quant]</span></div><div class="hidden lg:flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container-low rounded-lg"><span class="material-symbols-outlined text-secondary text-[14px]">pulse_alert</span><span class="font-label-sm text-label-sm text-secondary">12ms RTT</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button class="p-space-xs text-on-surface-variant hover:text-primary hover:bg-surface-container rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">bolt</span></button><button class="relative p-space-xs text-on-surface-variant hover:text-primary hover:bg-surface-container rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error"></span></button></div><div class="flex items-center gap-space-sm pl-space-sm"><div class="flex flex-col text-right hidden sm:flex"><span class="font-label-sm text-label-sm text-on-surface">SEC_OPERATOR_01</span><span class="font-label-sm text-label-sm text-secondary">NODE_SYSADMIN</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-background min-h-screen px-gutter-desktop py-space-lg"><div class="flex flex-col w-full">
+<div class="flex flex-col gap-space-lg w-full">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+<span class="font-label-sm text-label-sm text-error uppercase tracking-widest">REAL-TIME HEURISTIC & NLP TELEMETRY</span>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface">COGNITIVE THREAT & SOCIAL VULNERABILITY MATRIX</span>
+<span class="font-label-md text-label-md text-primary bg-surface-container-high px-space-xs py-0.5 rounded">POST /api/analyze-message</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="px-space-sm py-space-xs bg-surface-container rounded-lg flex items-center gap-space-xs shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified_user</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">AIRGAP INFERENCE :: <span class="text-secondary font-semibold">ON-DEVICE</span></span>
+</div>
+<button class="px-space-sm py-space-xs bg-surface-container-high hover:bg-surface-variant rounded-lg text-on-surface font-label-sm text-label-sm flex items-center gap-space-xs transition-colors" onclick="resetPipeline()" type="button">
+<span class="material-symbols-outlined text-[16px]">replay</span>
+<span>RESET VECTOR</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-xl flex flex-col gap-space-md relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-primary/5 via-transparent to-transparent pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">terminal</span>
+<span class="font-label-md text-label-md text-on-surface">PAYLOAD INGESTION BUFFER</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="charCounter">278 / 2048 CHARS</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">ATTACK VECTOR SCENARIOS</span>
+<div class="flex flex-wrap gap-space-xs">
+<button class="px-space-sm py-1 bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-sm text-label-sm rounded transition-all" onclick="loadPreset('ceo')" type="button">
+                #01 CEO Wire Scam
+              </button>
+<button class="px-space-sm py-1 bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-sm text-label-sm rounded transition-all" onclick="loadPreset('mfa')" type="button">
+                #02 IT MFA Reset
+              </button>
+<button class="px-space-sm py-1 bg-surface-container-high hover:bg-secondary-container hover:text-on-secondary-container text-on-surface font-label-sm text-label-sm rounded transition-all" onclick="loadPreset('safe')" type="button">
+                #03 Sec-Bulletin (Legit)
+              </button>
+</div>
+</div>
+<div class="relative flex flex-col">
+<label class="sr-only" for="messageInput">Raw Message Text</label>
+<textarea class="w-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm rounded-lg p-space-sm resize-none focus:outline-none focus:ring-0 focus:shadow-[0_0_20px_-4px_rgba(6,182,212,0.3)] transition-all leading-relaxed" id="messageInput" oninput="updateCounter()" placeholder="Paste intercepted email, SMS, or direct chat string here..." rows="7">URGENT NOTIFICATION FROM CEO OFFICE: IMMEDIATE ACTION REQUIRED! We are finalizing acquisition protocol Alpha. Due to non-compliance risks, account will be terminated in 2 hours unless you approve wire bypass authorization and submit your 2FA token directly to https://exec-payroll-portal.com/auth</textarea>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Llama-3-Guard Tokenizer Ready</span>
+</div>
+<button class="px-space-md py-space-sm bg-primary-container hover:bg-primary text-on-primary-container font-label-lg text-label-lg rounded-lg shadow-[0_0_16px_rgba(6,182,212,0.35)] flex items-center gap-space-xs transition-all active:scale-95" id="inspectBtn" onclick="triggerAnalysis()" type="button">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+<span>INSPECT SOCIAL ENGINEERING ATTACK</span>
+</button>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-[18px]">document_scanner</span>
+<span class="font-label-md text-label-md text-on-surface">TOKEN HIGHLIGHT ENGINE (VERBATIM TELEMETRY)</span>
+</div>
+<span class="font-label-sm text-label-sm text-error bg-error-container/30 px-space-xs py-0.5 rounded text-error">4 CRITICAL SPANS</span>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-lg font-label-sm text-label-sm leading-relaxed text-on-surface-variant flex flex-col gap-space-xs" id="verbatimViewport">
+<p>
+<span class="bg-error-container text-on-error-container font-semibold px-1 rounded shadow-sm">URGENT NOTIFICATION FROM CEO OFFICE</span>: 
+              <span class="bg-error text-on-error font-semibold px-1 rounded shadow-sm animate-pulse">IMMEDIATE ACTION REQUIRED!</span> 
+              We are finalizing acquisition protocol Alpha. Due to non-compliance risks, 
+              <span class="bg-error-container text-on-error-container font-semibold px-1 rounded shadow-sm">account will be terminated in 2 hours</span> 
+              unless you approve wire bypass authorization and submit your 
+              <span class="bg-tertiary-container text-on-tertiary-container font-semibold px-1 rounded shadow-sm">2FA token directly</span> 
+              to <span class="underline text-primary">https://exec-payroll-portal.com/auth</span>
+</p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs pt-space-xs">
+<div class="bg-surface-container px-space-xs py-1 rounded flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">PRESSURE</span>
+<span class="font-label-sm text-label-sm text-error font-semibold">HIGH</span>
+</div>
+<div class="bg-surface-container px-space-xs py-1 rounded flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">IMPERSONATION</span>
+<span class="font-label-sm text-label-sm text-error font-semibold">CONFIRMED</span>
+</div>
+<div class="bg-surface-container px-space-xs py-1 rounded flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">CRED-HARVEST</span>
+<span class="font-label-sm text-label-sm text-error font-semibold">ACTIVE</span>
+</div>
+<div class="bg-surface-container px-space-xs py-1 rounded flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">ML LATENCY</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">8.4ms</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-xl flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">HEURISTIC CONFIDENCE SCORE</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">99.2% LOCAL RUNTIME</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden flex">
+<div class="bg-error h-full" style="width: 72%"></div>
+<div class="bg-tertiary h-full" style="width: 23%"></div>
+<div class="bg-secondary h-full" style="width: 5%"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant pt-1">
+<span>Red Teaming: Aggressive (72%)</span>
+<span>Syntactic Coercion (23%)</span>
+<span>Benign (5%)</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-2xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="absolute -right-12 -bottom-12 w-48 h-48 rounded-full bg-error/10 blur-2xl pointer-events-none"></div>
+<div class="flex items-center gap-space-md z-10">
+<div class="relative w-36 h-36 flex items-center justify-center flex-shrink-0">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 120 120">
+<circle class="text-surface-container-highest" cx="60" cy="60" fill="none" r="50" stroke="currentColor" stroke-width="10"></circle>
+<circle class="text-error transition-all duration-700" cx="60" cy="60" fill="none" id="gaugeRing" r="50" stroke="currentColor" stroke-dasharray="314.159" stroke-dashoffset="15.7" stroke-linecap="round" stroke-width="10"></circle>
+</svg>
+<div class="absolute flex flex-col items-center justify-center text-center">
+<span class="font-headline-xl text-headline-xl text-error tracking-tighter leading-none" id="riskValueText">95</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">/ 100 RISK</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-error animate-ping"></span>
+<span class="font-label-md text-label-md text-error bg-error-container/40 px-space-xs py-0.5 rounded font-bold tracking-wide uppercase" id="threatStatusBadge">
+                  HOSTILE THREAT DETECTED
+                </span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Targeted Spear-Phishing Campaign</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs">
+                High severity anomaly triggering instantaneous quarantine policies across communication nodes.
+              </p>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs w-full md:w-auto z-10">
+<div class="px-space-sm py-space-xs bg-surface-container rounded flex items-center justify-between gap-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant">COERCION LEVEL</span>
+<span class="font-label-sm text-label-sm text-error font-bold">EXTREME</span>
+</div>
+<div class="px-space-sm py-space-xs bg-surface-container rounded flex items-center justify-between gap-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant">KILLCHAIN PHASE</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">EXPLOIT STAGE</span>
+</div>
+<div class="px-space-sm py-space-xs bg-surface-container rounded flex items-center justify-between gap-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant">MODEL ACCEL</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">FP16 CUDA/NE</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">DETECTED VECTORS</span>
+<span class="font-label-sm text-label-sm text-error bg-error-container/30 px-space-xs py-0.5 rounded">2 FLAGS</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="p-space-xs bg-surface-container rounded flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-error text-[18px] mt-0.5">psychology_alt</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">SOCIAL_ENGINEERING</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Authority deception & coercive pretense</span>
+</div>
+</div>
+<div class="p-space-xs bg-surface-container rounded flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[18px] mt-0.5">alarm_on</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">URGENCY</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Imposes synthetic 2-hour deadline deadline</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">LOCAL LLM REASONING</span>
+<span class="font-label-sm text-label-sm text-primary">v2.4 Quant</span>
+</div>
+<div class="p-space-sm bg-surface-container-lowest rounded-lg flex flex-col gap-space-xs h-full justify-between">
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed" id="modelReasoning">
+                Detects authority impersonation simulating C-suite executive with false urgency coercing immediate MFA token disclosure. High risk of immediate account takeover.
+              </p>
+<div class="flex items-center gap-space-xs pt-space-xs text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">done_all</span>
+<span>Inference verified locally in 12ms</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">radar</span>
+<span class="font-label-md text-label-md text-on-surface uppercase">COGNITIVE VULNERABILITY RADAR</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">FOUR FACTOR ATTACK SURFACE</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-center">
+<div class="md:col-span-5 flex items-center justify-center">
+<div class="relative w-44 h-44 flex items-center justify-center">
+<svg class="w-full h-full" viewbox="0 0 100 100">
+<polygon class="text-surface-container-highest" fill="none" points="50,10 90,50 50,90 10,50" stroke="currentColor" stroke-width="0.75"></polygon>
+<polygon class="text-surface-container-highest" fill="none" points="50,25 75,50 50,75 25,50" stroke="currentColor" stroke-width="0.75"></polygon>
+<line class="text-surface-container-highest" stroke="currentColor" stroke-width="0.5" x1="50" x2="50" y1="10" y2="90"></line>
+<line class="text-surface-container-highest" stroke="currentColor" stroke-width="0.5" x1="10" x2="90" y1="50" y2="50"></line>
+<polygon class="text-error" fill="currentColor" fill-opacity="0.25" id="radarPolygon" points="50,11 86.8,50 50,85.2 32,50" stroke="currentColor" stroke-width="2"></polygon>
+<circle class="text-error fill-current" cx="50" cy="11" r="2.5"></circle>
+<circle class="text-error fill-current" cx="86.8" cy="50" r="2.5"></circle>
+<circle class="text-error fill-current" cx="50" cy="85.2" r="2.5"></circle>
+<circle class="text-tertiary fill-current" cx="32" cy="50" r="2.5"></circle>
+</svg>
+</div>
+</div>
+<div class="md:col-span-7 flex flex-col gap-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface">Urgency & Panic Trigger</span>
+<span class="text-error font-semibold">98%</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 98%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface">Authority Pressure</span>
+<span class="text-error font-semibold">92%</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 92%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface">Fear & Consequence</span>
+<span class="text-error font-semibold">88%</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 88%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface">Scarcity & FOMO</span>
+<span class="text-tertiary font-semibold">45%</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 45%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-2xl flex flex-col gap-space-sm relative">
+<div class="flex items-center gap-space-xs text-error">
+<span class="material-symbols-outlined text-[20px]">security_update_warning</span>
+<span class="font-headline-sm text-headline-sm">DEFENSE DIRECTIVE & PLAYBOOK</span>
+</div>
+<div class="p-space-sm bg-surface-container rounded-lg flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-error font-bold uppercase tracking-wider">MANDATORY PROTOCOL:</span>
+<p class="font-body-md text-body-md text-on-surface">
+              Do NOT click links. Block sender domain <span class="text-primary font-mono font-semibold">@exec-payroll-portal.com</span> on edge DNS. Revoke active sessions for target inbox immediately.
+            </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-end gap-space-sm pt-space-xs">
+<button class="w-full sm:w-auto px-space-md py-space-sm bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-sm text-label-sm rounded-lg flex items-center justify-center gap-space-xs transition-colors" onclick="executeQuarantine()" type="button">
+<span class="material-symbols-outlined text-[16px]">domain_disabled</span>
+<span>SINKHOLE DOMAIN</span>
+</button>
+<button class="w-full sm:w-auto px-space-md py-space-sm bg-error-container hover:bg-error text-on-error-container hover:text-on-error font-label-lg text-label-lg rounded-lg shadow-[0_0_16px_rgba(239,68,68,0.35)] flex items-center justify-center gap-space-xs transition-all active:scale-95" id="siemDispatchBtn" onclick="dispatchSIEM()" type="button">
+<span class="material-symbols-outlined text-[18px]">send_time_extension</span>
+<span>DISPATCH TO SOC / SIEM</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-xl shadow-lg flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">analytics</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Active Session Guard Telemetry</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Analyzing incoming communications buffer via zero-egress neural weights.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-lg font-label-sm text-label-sm">
+<div class="flex flex-col text-right">
+<span class="text-on-surface-variant">SYSTEM CALL</span>
+<span class="text-primary font-mono">sys.mprotect(NX_ENABLED)</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="text-on-surface-variant">INSPECTED FRAMES</span>
+<span class="text-secondary font-mono">1,409 / SEC</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  const presets = {
+    ceo: {
+      text: "URGENT NOTIFICATION FROM CEO OFFICE: IMMEDIATE ACTION REQUIRED! We are finalizing acquisition protocol Alpha. Due to non-compliance risks, account will be terminated in 2 hours unless you approve wire bypass authorization and submit your 2FA token directly to https://exec-payroll-portal.com/auth",
+      risk: 95,
+      reasoning: "Detects authority impersonation simulating C-suite executive with false urgency coercing immediate MFA token disclosure.",
+      statusText: "HOSTILE THREAT DETECTED",
+      isHostile: true,
+      spansHtml: `<p><span class="bg-error-container text-on-error-container font-semibold px-1 rounded shadow-sm">URGENT NOTIFICATION FROM CEO OFFICE</span>: <span class="bg-error text-on-error font-semibold px-1 rounded shadow-sm animate-pulse">IMMEDIATE ACTION REQUIRED!</span> We are finalizing acquisition protocol Alpha. Due to non-compliance risks, <span class="bg-error-container text-on-error-container font-semibold px-1 rounded shadow-sm">account will be terminated in 2 hours</span> unless you approve wire bypass authorization and submit your <span class="bg-tertiary-container text-on-tertiary-container font-semibold px-1 rounded shadow-sm">2FA token directly</span> to <span class="underline text-primary">https://exec-payroll-portal.com/auth</span></p>`,
+      radar: "50,11 86.8,50 50,85.2 32,50"
+    },
+    mfa: {
+      text: "IT Support alert: Unusual login detected from Moscow, RU. Your corporate session will expire permanently. Reply with your push authenticator 6-digit passcode to keep active directory sync active.",
+      risk: 84,
+      reasoning: "Impersonates central IT helpdesk. Exploits fear of lockout to trick end-user into forwarding dynamic TOTP credentials.",
+      statusText: "ELEVATED CREDENTIAL HARVEST",
+      isHostile: true,
+      spansHtml: `<p><span class="bg-tertiary-container text-on-tertiary-container font-semibold px-1 rounded">IT Support alert</span>: Unusual login detected. <span class="bg-error-container text-on-error-container font-semibold px-1 rounded">session will expire permanently</span>. <span class="bg-error text-on-error font-semibold px-1 rounded animate-pulse">Reply with your push authenticator 6-digit passcode</span> to keep active directory sync active.</p>`,
+      radar: "50,18 80,50 50,82 38,50"
+    },
+    safe: {
+      text: "Quarterly CyberGuard OS Security Digest: Reminder that mandatory annual phishing resilience simulations conclude Friday at 17:00 UTC. View training modules directly on the internal intranet portal.",
+      risk: 4,
+      reasoning: "Standard routine security update. No external untrusted URIs, no coercive deadlines, and zero credential solicitations identified.",
+      statusText: "VERIFIED BENIGN BULLETIN",
+      isHostile: false,
+      spansHtml: `<p class="text-on-surface-variant">Quarterly CyberGuard OS Security Digest: Reminder that mandatory annual phishing resilience simulations conclude Friday at 17:00 UTC. View training modules directly on the internal intranet portal.</p>`,
+      radar: "50,46 54,50 50,54 46,50"
+    }
+  };
+
+  function updateCounter() {
+    const el = document.getElementById("messageInput");
+    const count = el.value.length;
+    document.getElementById("charCounter").innerText = `${count} / 2048 CHARS`;
+  }
+
+  function loadPreset(key) {
+    const p = presets[key];
+    if (!p) return;
+    const input = document.getElementById("messageInput");
+    input.value = p.text;
+    updateCounter();
+    applyState(p);
+  }
+
+  function applyState(p) {
+    const riskGauge = document.getElementById("gaugeRing");
+    const riskText = document.getElementById("riskValueText");
+    const threatBadge = document.getElementById("threatStatusBadge");
+    const reasoning = document.getElementById("modelReasoning");
+    const verbatim = document.getElementById("verbatimViewport");
+    const radar = document.getElementById("radarPolygon");
+
+    riskText.innerText = p.risk;
+    reasoning.innerText = p.reasoning;
+    verbatim.innerHTML = p.spansHtml;
+
+    const circumference = 314.159;
+    const offset = circumference - (circumference * (p.risk / 100));
+    riskGauge.style.strokeDashoffset = offset;
+
+    if (p.isHostile) {
+      riskGauge.classList.remove("text-secondary");
+      riskGauge.classList.add("text-error");
+      riskText.classList.remove("text-secondary");
+      riskText.classList.add("text-error");
+      threatBadge.innerText = p.statusText;
+      threatBadge.className = "font-label-md text-label-md text-error bg-error-container/40 px-space-xs py-0.5 rounded font-bold tracking-wide uppercase";
+      radar.setAttribute("class", "text-error");
+    } else {
+      riskGauge.classList.remove("text-error");
+      riskGauge.classList.add("text-secondary");
+      riskText.classList.remove("text-error");
+      riskText.classList.add("text-secondary");
+      threatBadge.innerText = p.statusText;
+      threatBadge.className = "font-label-md text-label-md text-secondary bg-secondary-container/40 px-space-xs py-0.5 rounded font-bold tracking-wide uppercase";
+      radar.setAttribute("class", "text-secondary");
+    }
+
+    if (p.radar) {
+      radar.setAttribute("points", p.radar);
+    }
+  }
+
+  function triggerAnalysis() {
+    const btn = document.getElementById("inspectBtn");
+    const originalContent = btn.innerHTML;
+    btn.innerHTML = `<span class="material-symbols-outlined text-[18px] animate-spin">sync</span><span>PROCESSING ONNX...</span>`;
+    btn.disabled = true;
+
+    setTimeout(() => {
+      btn.innerHTML = originalContent;
+      btn.disabled = false;
+      const inputVal = document.getElementById("messageInput").value.toLowerCase();
+      if (inputVal.includes("safe") || inputVal.includes("digest") || inputVal.includes("training")) {
+        applyState(presets.safe);
+      } else if (inputVal.includes("mfa") || inputVal.includes("passcode")) {
+        applyState(presets.mfa);
+      } else {
+        applyState(presets.ceo);
+      }
+    }, 450);
+  }
+
+  function resetPipeline() {
+    loadPreset("ceo");
+  }
+
+  function dispatchSIEM() {
+    const btn = document.getElementById("siemDispatchBtn");
+    btn.innerText = "DISPATCHED TO SOC";
+    btn.classList.remove("bg-error-container", "hover:bg-error");
+    btn.classList.add("bg-secondary-container", "text-on-secondary-container");
+    setTimeout(() => {
+      btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">send_time_extension</span><span>DISPATCH TO SOC / SIEM</span>`;
+      btn.classList.remove("bg-secondary-container", "text-on-secondary-container");
+      btn.classList.add("bg-error-container", "text-on-error-container");
+    }, 3000);
+  }
+
+  function executeQuarantine() {
+    alert("Edge DNS sinkhole activated for target domains. Gateway rules propagating across cluster nodes.");
+  }
+</script></main></div></body></html>
